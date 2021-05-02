@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Fonts and CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+
+		<!-- SMUI Styles -->
+		<link rel="stylesheet" href="/smui.css" media="(prefers-color-scheme: light)" />
+		<link rel="stylesheet" href="/smui-dark.css" media="screen and (prefers-color-scheme: dark)" />
+
+<style type="text/css">
+:root {
+  --text-color: #333;
+  --container-bg: lightblue;
+  --bg-color: white;
+  --heading-color: #333;
+
+  --box-padding: 0;
+  --box-color: #fa8072;
+
+  --text-color-aside: rgba(255, 62, 0, 0.87);
+}
+
+html[data-theme='dark'] {
+  --text-color: white;
+  --container-bg: #555;
+  --bg-color: #333;
+  --heading-color: lightblue;
+
+  --text-color-aside: #fff;
+}
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+aside.mdc-drawer--open{
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.mdc-drawer .mdc-drawer__title,
+.mdc-drawer .mdc-drawer__subtitle,
+.mdc-drawer .mdc-deprecated-list-item,
+.mdc-drawer .mdc-deprecated-list-item__graphic{
+	color: var(--text-color);
+}
+
+.mdc-drawer .mdc-deprecated-list-item--activated,
+.mdc-drawer .mdc-deprecated-list-group__subheader{
+	color: var(--text-color-aside);
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+
+		%svelte.head%
+	</head>
+	<body>
+		<div id="svelte">%svelte.body%</div>
+	</body>
+</html>
